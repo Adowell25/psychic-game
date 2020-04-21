@@ -56,6 +56,9 @@
             //if user guess does not match computer guess then user will be alerted to the incorrect guess and the loss column should increment by 1
             if (userguess === computerguess){
                 wins++;
+                alert("Nice Job!");
+                window.location.reload(false);
+
                 // alert("Wins: "+ wins);
                 
             }
@@ -69,6 +72,7 @@
 
             if (guessesleft === 0){
                 alert("Game over");
+                // window.location.reload(false);
             }
 
             var html = "<h1>Guess what letter I'm thinking of!</h1>" +
