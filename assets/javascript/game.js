@@ -25,7 +25,7 @@
             if (userguess === computerguess){
                 wins++;
                 alert("Nice Job!");
-                window.location.reload(false);
+                guessesleft = 9;
 
                 // alert("Wins: "+ wins);
                 
@@ -41,6 +41,8 @@
             if (guessesleft === 0){
                 alert("Game over");
                 // window.location.reload(false);
+                guessesleft = 9;
+                
             }
 
             var html = "<h1>Guess what letter I'm thinking of!</h1>" +
