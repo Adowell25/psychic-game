@@ -13,11 +13,11 @@
             var userguess = String.fromCharCode(event.keyCode).
                 toLowerCase();
 
-                console.log(userguess);
+                // console.log(userguess);
             //computer guess is random letter
             var computerguess = computeroptions[Math.floor(Math.random()*computeroptions.length)];
 
-            console.log(computerguess);
+            // console.log(computerguess);
 
     
 
@@ -52,7 +52,7 @@
                         "<p>Your Guesses So Far: "+ userguess + "</p>";
 
             document.querySelector('#game').innerHTML = html;
-
         }
+
 
     
