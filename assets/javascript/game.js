@@ -8,10 +8,11 @@
         //Guesses remaing
         var guessesleft = 9
 
+
         //on key function that records the users guess and pushes it to lowercase,
         document.onkeyup = function() {
             var userguess = String.fromCharCode(event.keyCode).
-                toLowerCase();
+                toLowerCase();        
 
                 // console.log(userguess);
             //computer guess is random letter
@@ -25,14 +26,13 @@
             if (userguess === computerguess){
                 wins++;
                 alert("Nice Job!");
-                guessesleft = 9;
+                guessesleft =9;
 
                 // alert("Wins: "+ wins);
                 
             }
             //If the user gues is correct then the user will be alerted of the win, then the will column should be incremented by 1
             else{
-                losses++;
                 // alert("Losses: "+ losses);
                 guessesleft--;
                 // console.log(guessesleft + " remaining guesses.")
@@ -40,6 +40,7 @@
 
             if (guessesleft === 0){
                 alert("Game over");
+                losses++;
                 // window.location.reload(false);
                 guessesleft = 9;
                 
@@ -50,8 +51,9 @@
                         "<h2>Losses: " + losses + "</h2>" +
                         "<p>Guesses Left: "+ guessesleft + "</p>" +
                         "<p>Your Guesses So Far: "+ userguess + "</p>";
-
-            document.querySelector('#game').innerHTML = html;
+                        
+            document.querySelector('.game').innerHTML = html;
+    
         }
 
 

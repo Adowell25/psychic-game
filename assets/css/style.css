@@ -1,0 +1,16 @@
+body {
+    width: 90%;
+    font-family: 'Cinzel', serif;;
+    font-size: 18px;
+    background-image: url("galaxy-background.png");
+    margin-left: 60px;
+}
+
+.game{
+    margin-left: 50px;
+    text-align: center;
+}
+
+img{
+    margin-left: 270px;
+}
